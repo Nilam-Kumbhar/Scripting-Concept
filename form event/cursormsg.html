@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter your name:</h3>
+
+<input type="text"
+       onfocus="showMessage()"
+       onblur="hideMessage()">
+
+<p id="msg"></p>
+
+<script>
+    function showMessage() {
+        document.getElementById("msg").innerText =
+            "Cursor entered the input field";
+    }
+
+    function hideMessage() {
+        document.getElementById("msg").innerText =
+            "Cursor left the input field";
+    }
+</script>
+
+</body>
+</html>

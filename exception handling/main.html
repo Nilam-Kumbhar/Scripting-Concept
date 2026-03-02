@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>exception handling example</h2>
+
+    <script>
+        let num=5
+        try{
+          if(num<0){
+            throw "no can not be negative."
+          } 
+          document.write("valid no. <br/>")
+        } 
+        catch(error){
+            document.write("error:"+error)
+        }
+        finally{
+            document.write("program execution completed")
+        }
+
+        let age = 0;
+
+            try {
+                if (age <= 0) {
+                    throw "Age cannot be negative or zero";
+                }
+                document.write("Valid Age: " + age);
+            }
+            catch (e) {
+                document.write("Error: " + e);
+            }
+        
+        let username="nilam";
+        
+            try{
+                if(username== null){
+                    throw "user name should not be empty."
+                }
+                document.write("username:"+username)
+            }
+            catch(e){
+                document.write("error:"+e)
+            }
+            
+    </script>
+</body>
+</html>

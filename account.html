@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <h2>Account Details</h2>
+<script>
+    class Account{
+        constructor(accname,accno,balance,amount){
+            this.accname=accname;
+            this.accno=accno;
+            this.balance=balance;
+            this.amount=amount;
+        }
+        deposit(amount){
+            this.balance+=amount;
+            document.write("updated balance:"+this.balance);
+        }
+        display(){
+            document.write("Account Holder Name: "+this.accname+"<br>");
+            document.write("Account Number: "+this.accno+"<br>");
+            document.write("Account available balance:"+this.balance+"<br>");
+        
+        }
+    }
+    accname=prompt("Enter account holder name:");
+    accno=parseInt(prompt("Enter account number:"));
+    balance=parseInt(prompt("Enter balance:"));
+    amount=parseInt(prompt("enter amount to deposit:"));
+    let acc=new Account(accname,accno,balance,amount);
+    acc.display();
+    acc.deposit(amount);
+</script>    
+</body>
+</html>

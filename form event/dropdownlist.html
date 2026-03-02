@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Select your course:</h3>
+
+    <select onchange="showAlert(this.value)">
+    <option value="">-- Select --</option>
+    <option value="BCA">BCA</option>
+    <option value="BSc">BSc</option>
+    <option value="MCA">MCA</option>
+    </select>
+
+<script>
+    function showAlert(selectedValue) {
+        if (selectedValue !== "") {
+            alert("You selected: " + selectedValue);
+        }
+    }
+</script>
+</body>
+</html>

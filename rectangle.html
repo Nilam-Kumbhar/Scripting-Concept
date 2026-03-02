@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Area Shape</h2>
+<script>
+    class Shape{
+        length;
+        breadth;
+        constructor(l,b){
+            this.l=length;
+            this.b=breadth;
+        }
+        
+        shape(){
+            if(this.l==this.b){
+                document.write("area of square:",(this.l*this.l));
+            }else{
+                document.write("area of rectangle:",(this.l*this.b));
+                document.write("area of triangle:",((this.l*this.b)/2));
+            }
+        }
+    }
+    length=prompt("enter length:");
+    breadth=prompt("enter breadth:");
+    let obj=new Shape(length,breadth);
+    obj.shape();
+</script>
+</body>
+</html>

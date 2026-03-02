@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+</head>
+<body>
+    <h2>Student Record</h2>
+<!-- <script>
+    class student{
+        name;
+        age;
+        marks;
+        constructor(name,age,marks){
+            this.name=name;
+            this.age=age;
+            this.marks=marks;
+        }
+        stud(){
+            document.write("name: "+this.name+" ");
+            document.write("age: "+this.age+" ");
+            document.write("marks: "+this.marks)
+        }
+    }
+    let s=new student("nilam",20,80);
+    s.stud();
+</script> -->
+<script>
+    class student{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        stud(){
+            document.write("name: "+this.name+" ");
+            document.write("age: "+this.age);
+        }
+    }
+    name=prompt("enter name:");
+    age=prompt("enter age:");
+    let s=new student(name,age);
+    s.stud();
+</script>
+</body>
+</html>

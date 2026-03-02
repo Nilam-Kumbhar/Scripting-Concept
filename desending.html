@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>3no. in descending order</h2>
+<script >
+         let a = Number(prompt("Enter first number:"));
+         let b = Number(prompt("Enter second number:"));
+         let c = Number(prompt("Enter third number:"));
+        
+   
+    if(a>b && a>c){
+        if(b>c){
+            document.write(a,b,c);
+        }else{
+            document.write(a,c,b);
+        }
+    }else if(b>a && b>c){
+        if(a>c){
+            document.write(b,a,c);
+        }else{
+            document.write(b,c,a);
+        }
+    }else{
+        if(a>b){
+            document.write(c,a,b);
+        }else{
+            document.write(c,b,a);
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<form name="form" onsubmit="return validationform()">
+    <h2>Registration Form</h2><br/>
+
+    Name:
+    <input type="text" name="name" placeholder="enter your name"><br/><br/>
+
+    Email:
+    <input type="email" name="email" placeholder="abc@gmail.com"><br/><br/>
+
+    Password:
+    <input type="password" name="password" placeholder="******"><br/><br/>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function validationform() {
+
+    var name = document.form.name.value;
+    var email = document.form.email.value;
+    var password = document.form.password.value;
+
+    if (name === "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Email must be filled out");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+}
+</script>
+
+</body>
+</html>
