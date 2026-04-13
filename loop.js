@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <script>
-            console.log("Hello JavaScript");
-        </script>
-   </body>
-</html>
+let age=18
+if (age>=18){
+    console.log("can vote")
+}
